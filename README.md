@@ -1,4 +1,4 @@
-# sec_3
+# Flutter Project
 
 A new Flutter project.
 
