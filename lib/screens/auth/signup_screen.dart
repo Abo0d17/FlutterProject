@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sec_3/shared/components/tools.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,54 +15,49 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-
                 label(
-                 text: "Login",
+                  text: "Sign Up",
                   size: 30,
-                  color: Colors.purple,
+                  color: Colors.black,
                   bold: FontWeight.bold,
                 ),
-                // Text(
-                //   "Login",
-                //   style: TextStyle(
-                //     fontSize: 20,
-                //     fontWeight: FontWeight.bold,
-                //     color: Colors.deepOrange,
-                //   ),
-                // ),
                 SizedBox(
                   height: 10,
                 ),
                 label(
-                  text: "Login And Browes our App",
-                  color: Colors.purple,
+                  text: "Sign Up And Browse our App",
+                  color: Colors.black,
                 ),
                 SizedBox(
                   height: 20,
                 ),
-                // TextFormField(
-                //   decoration: InputDecoration(
-                //     border: OutlineInputBorder(),
-                //     isDense: true,
-                //     prefixIcon: Icon(Icons.email),
-                //     suffixIcon: Icon(Icons.emergency_recording_outlined),
-                //   ),
-                //   keyboardType: TextInputType.emailAddress,
-                //   autofocus: true,
-                // ),
-
+                textBox(
+                    hint: "First Name",
+                    labelText: "First Name",
+                    autofocus: true,
+                    keyBoard: TextInputType.name,
+                    prefixIcon: Icons.person),
+                SizedBox(
+                  height: 20,
+                ),
+                textBox(
+                    hint: "Last Name",
+                    labelText: "Last Name",
+                    keyBoard: TextInputType.name,
+                    prefixIcon: Icons.person),
+                SizedBox(
+                  height: 20,
+                ),
                 textBox(
                   labelText: "Phone",
                   hint: "Enter Your Phone",
                   suffixText: "+967",
-                  autofocus: true,
                   keyBoard: TextInputType.phone,
                   prefixIcon: Icons.phone_android,
                 ),
                 SizedBox(
                   height: 20,
                 ),
-
                 textBox(
                   labelText: "Password",
                   hint: "Enter Your Password",
@@ -74,12 +69,12 @@ class LoginScreen extends StatelessWidget {
                   height: 20,
                 ),
                 button(
-                    text: "Login",
-                    click:(){},
-                  backColor: Colors.purple,
+                  text: "Login",
+                  click: () {},
+                  backColor: Colors.grey[300]!,
                   width: double.infinity,
                   radius: 10,
-                  txtColor: Colors.white,
+                  txtColor: Colors.black,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -87,7 +82,7 @@ class LoginScreen extends StatelessWidget {
                     Text("Do not have an Account?"),
                     textButton(
                       text: "Register",
-                      click: (){},
+                      click: () {},
                     ),
                   ],
                 ),

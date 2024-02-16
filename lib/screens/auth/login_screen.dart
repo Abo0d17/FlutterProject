@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sec_3/shared/components/tools.dart';
 
-class SignupScreen extends StatelessWidget {
-  const SignupScreen({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,42 +15,22 @@ class SignupScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-
                 label(
-                 text: "Login",
+                  text: "Login",
                   size: 30,
-                  color: Colors.purple,
+                  color: Colors.grey[300]!,
                   bold: FontWeight.bold,
                 ),
-                // Text(
-                //   "Login",
-                //   style: TextStyle(
-                //     fontSize: 20,
-                //     fontWeight: FontWeight.bold,
-                //     color: Colors.deepOrange,
-                //   ),
-                // ),
                 SizedBox(
                   height: 10,
                 ),
                 label(
-                  text: "Login And Browes our App",
-                  color: Colors.purple,
+                  text: "Login And Browse our App",
+                  color: Colors.grey[300]!,
                 ),
                 SizedBox(
                   height: 20,
                 ),
-                // TextFormField(
-                //   decoration: InputDecoration(
-                //     border: OutlineInputBorder(),
-                //     isDense: true,
-                //     prefixIcon: Icon(Icons.email),
-                //     suffixIcon: Icon(Icons.emergency_recording_outlined),
-                //   ),
-                //   keyboardType: TextInputType.emailAddress,
-                //   autofocus: true,
-                // ),
-
                 textBox(
                   labelText: "Phone",
                   hint: "Enter Your Phone",
@@ -62,7 +42,6 @@ class SignupScreen extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-
                 textBox(
                   labelText: "Password",
                   hint: "Enter Your Password",
@@ -74,9 +53,9 @@ class SignupScreen extends StatelessWidget {
                   height: 20,
                 ),
                 button(
-                    text: "Login",
-                    click:(){},
-                  backColor: Colors.purple,
+                  text: "Login",
+                  click: () {},
+                  backColor: Colors.grey[300]!,
                   width: double.infinity,
                   radius: 10,
                   txtColor: Colors.white,
@@ -87,7 +66,7 @@ class SignupScreen extends StatelessWidget {
                     Text("Do not have an Account?"),
                     textButton(
                       text: "Register",
-                      click: (){},
+                      click: () {},
                     ),
                   ],
                 ),
